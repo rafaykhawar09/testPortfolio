@@ -4,8 +4,6 @@ var hamburger = $(".hamburger");
 var navGroup = $(".nav-group");
 var navLinks = $(".nav-link");
 
-console.log(navbar);
-console.log(hamburger);
 
 hamburger.on("click", function(){
      
@@ -33,6 +31,13 @@ navLinks.on("click", function(){
           navGroup.slideUp("slow");
           navGroup.addClass("hidden");
      }
+
+     console.log($(this).children());
+
+     
+     // document.querySelector("#projects").scrollIntoView({ 
+     //      behavior: 'smooth'
+     // });
 });
 
 $(window).scroll(function(){
